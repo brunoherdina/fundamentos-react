@@ -17,9 +17,11 @@ export default props => {
     <div className="TabelaProdutos">
       <table border="1">
         <thead>
-          <th>ID</th>
-          <th>Nome</th>
-          <th>Preço</th>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+          </tr>
         </thead>
         <tbody>{linhasProdutos}</tbody>
       </table>

@@ -1,5 +1,7 @@
 import "./App.css";
 import React from "react";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import Primeiro from "./components/basicos/Primeiro";
@@ -15,6 +17,14 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#09 - Comunicação Direta" color="#6B46AA">
+        <DiretaPai numeros={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}></DiretaPai>
+      </Card>
+
+      <Card titulo="#08 - Renderização Condicional" color="#FFC300">
+        <ParOuImpar numeros={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}></ParOuImpar>
+      </Card>
+
       <Card titulo="#07 - Desafio Repetição" color="#865BEA">
         <TabelaProdutos></TabelaProdutos>
       </Card>
